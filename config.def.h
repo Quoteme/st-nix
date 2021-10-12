@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "scientifica:pixelsize=11:antialias=false";
 static int borderpx = 2;
 
 /*
@@ -195,7 +195,10 @@ static Shortcut shortcuts[] = {
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
 	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
 	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
-	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
+	{ TERMMOD,              XK_equal,       zoomreset,      {.f =  0} }, // ctrl shift 0 reset zoom
+	{ TERMMOD,              XK_asterisk,    zoom,           {.f = +1} }, // ctrl shirt + inc zoom
+	{ TERMMOD,              XK_underscore,  zoom,           {.f = -1} }, // ctrl shirt - inc zoom
+	{ TERMMOD,              XK_0,           zoomreset,      {.f =  0} },
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },

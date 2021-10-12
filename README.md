@@ -11,6 +11,9 @@ want and then do a "nix-build".
 | Key | Action |
 |---|---|
 | <kbd>ctrl</kbd><kbd>shift</kbd><kbd>enter</kbd> | open new terminal in same directory |
+| <kbd>ctrl</kbd><kbd>shift</kbd><kbd>+</kbd> | increase font size |
+| <kbd>ctrl</kbd><kbd>shift</kbd><kbd>-</kbd> | decrease font size |
+| <kbd>ctrl</kbd><kbd>shift</kbd><kbd>=</kbd> | reset font size |
 
 ## Patches
 
