@@ -14,6 +14,7 @@ want and then do a "nix-build".
 | <kbd>ctrl</kbd><kbd>shift</kbd><kbd>+</kbd> | increase font size |
 | <kbd>ctrl</kbd><kbd>shift</kbd><kbd>-</kbd> | decrease font size |
 | <kbd>ctrl</kbd><kbd>shift</kbd><kbd>=</kbd> | reset font size |
+| <kbd>ctrl</kbd><kbd>shift</kbd><kbd>s</kbd> | cycle through fonts |
 
 ## Patches
 
