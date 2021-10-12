@@ -3,8 +3,22 @@ stdenv.mkDerivation rec {
   version = "0.1";
   pname = "default";
   src = ./.;
-  buildInputs = [
+  nativeBuildInputs = [
+    pkg-config
+    ncurses
+    fontconfig
+    freetype
   ];
+  buildInputs = [
+    xorg.libX11
+    xorg.libXft
+  ];
+  TERMINFO=".";
+  makeFlags = [
+    "DESTDIR=$(out)"
+    "PREFIX="
+  ];
+  # dontBuild = true;
   # buildPhase = "ghc --make xmonadctl.hs";
   # installPhase = ''
   #   mkdir -p $out/bin
