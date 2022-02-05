@@ -1,7 +1,7 @@
 { pkgs ? import <nixpkgs> {} }: with pkgs;
 stdenv.mkDerivation rec {
-  version = "0.1";
-  pname = "default";
+  version = "0.8.4";
+  pname = "st-nix";
   src = ./.;
   nativeBuildInputs = [
     pkg-config

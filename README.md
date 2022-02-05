@@ -22,3 +22,12 @@ want and then do a "nix-build".
 - Scrollback-mouse
 - Scrollback-mouse-altscreen
 - newterm
+
+## TODO
+
+- improve nix integration
+    - key-binding for `exit` command
+    - <kbd>ctrl</kbd><kbd>shift</kbd><kbd>enter</kbd> calls function that
+        - opens a new terminal in the same directory
+        - also executes `nix-shell` in the new terminal if currently
+          inside a `nix-shell`
