@@ -15,6 +15,7 @@ want and then do a "nix-build".
 | <kbd>ctrl</kbd><kbd>shift</kbd><kbd>-</kbd> | decrease font size |
 | <kbd>ctrl</kbd><kbd>shift</kbd><kbd>=</kbd> | reset font size |
 | <kbd>ctrl</kbd><kbd>shift</kbd><kbd>s</kbd> | cycle through fonts |
+| <kbd>ctrl</kbd><kbd>shift</kbd><kbd>i</kbd> | invert colors |
 
 ## Patches
 
@@ -22,6 +23,8 @@ want and then do a "nix-build".
 - Scrollback-mouse
 - Scrollback-mouse-altscreen
 - newterm
+- ligatures
+- invert colors
 
 ## TODO
 
