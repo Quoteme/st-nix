@@ -12,6 +12,10 @@ stdenv.mkDerivation rec {
   buildInputs = [
     xorg.libX11
     xorg.libXft
+    harfbuzz # for ligature support
+    scientifica
+    fira-code
+    hasklig
   ];
   TERMINFO=".";
   makeFlags = [

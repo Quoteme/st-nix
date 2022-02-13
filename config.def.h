@@ -7,7 +7,8 @@
  */
 static char *fonts[] = {
 	"scientifica:pixelsize=11:antialias=false",
-	"Liberation Mono:pixelsize=12:antialias=true:autohint=true"
+	"Fira Code:pixelsize=12:antialias=true:autohint=true",
+	"Hasklig:pixelsize=12:antialias=true:autohint=true"
 };
 static int fonts_current = 0;
 
