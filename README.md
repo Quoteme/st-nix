@@ -25,6 +25,7 @@ want and then do a "nix-build".
 - newterm
 - ligatures
 - invert colors
+- desktop entry
 
 ## TODO
 
