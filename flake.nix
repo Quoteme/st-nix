@@ -37,7 +37,7 @@
         "PREFIX="
       ];
       postInstall = ''
-        ln -sf $out/bin/st $out/bin/st-nix
+        cp $out/bin/st $out/bin/st-nix
       '';
     };
   };
