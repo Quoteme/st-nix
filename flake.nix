@@ -40,10 +40,9 @@
             "DESTDIR=$(out)"
             "PREFIX="
           ];
-          # This causes an error: 'builtins.storePath' is not allowed in pure evaluation mode
-          # postInstall = ''
-          #   cp $out/bin/st $out/bin/st-nix
-          # '';
+          postInstall = ''
+            cp $out/bin/st $out/bin/st-nix
+          '';
         };
         defaultPackage = packages.st-nix;
         defaultApp = {
