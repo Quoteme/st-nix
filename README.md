@@ -26,6 +26,7 @@ want and then do a "nix-build".
 - ligatures
 - invert colors
 - desktop entry
+- Fix Keyboard Input
 
 ## TODO
 
@@ -35,3 +36,5 @@ want and then do a "nix-build".
         - opens a new terminal in the same directory
         - also executes `nix-shell` in the new terminal if currently
           inside a `nix-shell`
+    - sixel support 
+        - for neovim-latex equation preview: https://github.com/bytesnake/vim-preview-math
