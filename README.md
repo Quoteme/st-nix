@@ -27,6 +27,8 @@ want and then do a "nix-build".
 - invert colors
 - desktop entry
 - Fix Keyboard Input
+    - this is really cool because it allows for <kbd>ctrl</kbd><kbd>Tab</kbd>
+      to be mapped in neovim!
 
 ## TODO
 
