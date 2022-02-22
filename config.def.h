@@ -722,6 +722,14 @@ static Key key[] = {
 	{ XK_Tab,          Mod1Mask|ControlMask,           "\033[1;7Z",   0,  0},
 	{ XK_Tab,          Mod1Mask|ControlMask|ShiftMask, "\033[1;8Z",   0,  0},
 	{ XK_Tab,          Mod1Mask|ShiftMask,             "\033[1;4Z",   0,  0},
+	// Edit by Luca - This needs to be added for ctrl-shift-tab to actually work
+	{ XK_ISO_Left_Tab, ControlMask,                    "\033[9;5u",   0,  0},
+	{ XK_ISO_Left_Tab, ControlMask|ShiftMask,          "\033[1;5Z",   0,  0},
+	{ XK_ISO_Left_Tab, Mod1Mask,                       "\033[1;3Z",   0,  0},
+	{ XK_ISO_Left_Tab, Mod1Mask|ControlMask,           "\033[1;7Z",   0,  0},
+	{ XK_ISO_Left_Tab, Mod1Mask|ControlMask|ShiftMask, "\033[1;8Z",   0,  0},
+	{ XK_ISO_Left_Tab, Mod1Mask|ShiftMask,             "\033[1;4Z",   0,  0},
+	// Edit by Luca end
 	{ XK_Return,       ControlMask,                    "\033[13;5u",  0,  0},
 	{ XK_Return,       ControlMask|ShiftMask,          "\033[13;6u",  0,  0},
 	{ XK_Return,       Mod1Mask,                       "\033[13;3u",  0,  0},
