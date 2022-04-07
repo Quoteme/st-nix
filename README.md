@@ -8,14 +8,14 @@ want and then do a "nix-build".
 
 ## Keyboard Shortcuts
 
-| Key | Action |
-|---|---|
-| <kbd>ctrl</kbd><kbd>shift</kbd><kbd>enter</kbd> | open new terminal in same directory |
-| <kbd>ctrl</kbd><kbd>shift</kbd><kbd>+</kbd> | increase font size |
-| <kbd>ctrl</kbd><kbd>shift</kbd><kbd>-</kbd> | decrease font size |
-| <kbd>ctrl</kbd><kbd>shift</kbd><kbd>=</kbd> | reset font size |
-| <kbd>ctrl</kbd><kbd>shift</kbd><kbd>s</kbd> | cycle through fonts |
-| <kbd>ctrl</kbd><kbd>shift</kbd><kbd>i</kbd> | invert colors |
+| Key                                         | Action                              |
+|---------------------------------------------|-------------------------------------|
+| <kbd>F4</kbd>                               | open new terminal in same directory |
+| <kbd>ctrl</kbd><kbd>shift</kbd><kbd>+</kbd> | increase font size                  |
+| <kbd>ctrl</kbd><kbd>shift</kbd><kbd>-</kbd> | decrease font size                  |
+| <kbd>ctrl</kbd><kbd>shift</kbd><kbd>=</kbd> | reset font size                     |
+| <kbd>ctrl</kbd><kbd>shift</kbd><kbd>s</kbd> | cycle through fonts                 |
+| <kbd>ctrl</kbd><kbd>shift</kbd><kbd>i</kbd> | invert colors                       |
 
 ## Patches
 
