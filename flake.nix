@@ -1,22 +1,30 @@
 {
-  description = "A version of simple terminal leveraging the power of the nix ecosystem";
+  description = "Luca's simple Neovim flake for easy configuration";
 
   inputs = {
-    nixpkgs.url = "nixpkgs/nixos-unstable";
-    flake-utils.url = "github:numtide/flake-utils";
-    flake-compat = {
-      url = github:edolstra/flake-compat;
-      flake = false;
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    flake-utils = {
+      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:numtide/flake-utils";
     };
   };
 
-  outputs = {self, nixpkgs, flake-compat, flake-utils}: 
+  outputs = { self, nixpkgs, flake-utils, ... }@inputs:
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = import nixpkgs {
           inherit system;
         };
-      in rec {
+      in
+      rec {
+        defaultApp = apps.st-nix;
+        defaultPackage = packages.st-nix;
+
+        apps.st-nix = {
+          type = "app";
+          program = "${defaultPackage}/bin/st";
+        };
+
         packages.st-nix = pkgs.stdenv.mkDerivation rec {
           version = "0.8.4";
           pname = "st-nix";
@@ -40,14 +48,6 @@
             "DESTDIR=$(out)"
             "PREFIX="
           ];
-          postInstall = ''
-            cp $out/bin/st $out/bin/st-nix
-          '';
-        };
-        defaultPackage = packages.st-nix;
-        defaultApp = {
-          type = "app";
-          program = "${defaultPackage}/bin/st";
         };
       }
     );
