@@ -989,6 +989,9 @@ cyclefonts(const Arg *dummy)
 	}
 	usedfont = fonts[fonts_current];
 	xloadfonts(fonts[fonts_current], 0);
+  Arg larg;
+  larg.f = 0;
+  zoomreset(&larg);
 	redraw();
 }
 
