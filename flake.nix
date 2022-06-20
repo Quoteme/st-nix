@@ -39,6 +39,7 @@
             xorg.libX11
             xorg.libXft
             harfbuzz # for ligature support
+            noto-fonts-emoji
             scientifica
             fira-code
             hasklig
