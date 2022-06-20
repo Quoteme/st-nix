@@ -7,13 +7,13 @@
  */
 static char *fonts[] = {
 	"scientifica:pixelsize=11:antialias=false",
-	"Fira Code:pixelsize=12:antialias=true:autohint=true",
-	"Hasklig:pixelsize=12:antialias=true:autohint=true"
+	"Fira Code:pixelsize=11:antialias=true:autohint=true",
+	"Hasklig:pixelsize=11:antialias=true:autohint=true"
 };
 static int fonts_current = 0;
 /* Spare fonts */
 static char *font2[] = {
-	"Noto Color Emoji:pixelsize=13:antialias=true:autohint=true"
+	"Noto Color Emoji:pixelsize=11:antialias=true:autohint=true"
 /*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
 /*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
 };
