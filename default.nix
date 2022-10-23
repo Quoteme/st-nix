@@ -15,7 +15,6 @@ stdenv.mkDerivation rec {
     harfbuzz # for ligature support
     scientifica
     fira-code
-    hasklig
   ];
   TERMINFO=".";
   makeFlags = [
