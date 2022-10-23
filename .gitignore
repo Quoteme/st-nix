@@ -2,3 +2,7 @@ result
 .direnv
 .idea
 .cache
+*.o
+st
+config.h
+compile_commands.json
