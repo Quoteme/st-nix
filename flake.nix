@@ -47,6 +47,11 @@
             ln -s $out/bin/st $out/bin/st-nix
           '';
         };
+        devShells.default = pkgs.mkShell {
+          buildInputs = with pkgs; [
+            clang
+          ] ++ packages.st-nix.buildInputs;
+        };
       }
     );
 }
