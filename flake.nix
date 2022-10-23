@@ -50,6 +50,8 @@
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
             clang
+            clang-tools
+            bear
           ] ++ packages.st-nix.buildInputs;
         };
       }
