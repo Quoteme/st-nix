@@ -54,6 +54,9 @@
             clang-tools
             bear
           ] ++ packages.st-nix.buildInputs;
+          shellHook = ''
+            bear -- make
+          '';
         };
       }
     );
