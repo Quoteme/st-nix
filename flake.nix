@@ -17,13 +17,8 @@
         };
       in
       rec {
-        defaultApp = apps.st-nix;
+        defaultApp = packages.st-nix;
         defaultPackage = packages.st-nix;
-
-        apps.st-nix = {
-          type = "app";
-          program = "${defaultPackage}/bin/st";
-        };
 
         packages.st-nix = pkgs.stdenv.mkDerivation rec {
           version = "0.8.4";
@@ -42,13 +37,15 @@
             noto-fonts-emoji
             scientifica
             fira-code
-            hasklig
           ];
           TERMINFO=".";
           makeFlags = [
             "DESTDIR=$(out)"
             "PREFIX="
           ];
+          postInstall = ''
+            ln -s $out/bin/st $out/bin/st-nix
+          '';
         };
       }
     );
