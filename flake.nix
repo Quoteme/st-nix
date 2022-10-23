@@ -47,6 +47,17 @@
             ln -s $out/bin/st $out/bin/st-nix
           '';
         };
+        devShells.default = pkgs.mkShell {
+          nativeBuildInputs = [ pkgs.pkg-config ];
+          buildInputs = with pkgs; [
+            clang
+            clang-tools
+            bear
+          ] ++ packages.st-nix.buildInputs;
+          shellHook = ''
+            bear -- make
+          '';
+        };
       }
     );
 }
