@@ -48,6 +48,7 @@
           '';
         };
         devShells.default = pkgs.mkShell {
+          nativeBuildInputs = [ pkgs.pkg-config ];
           buildInputs = with pkgs; [
             clang
             clang-tools
