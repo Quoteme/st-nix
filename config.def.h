@@ -7,8 +7,8 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *fonts[] = {
-	"scientifica:pixelsize=11:antialias=false",
 	"Fira Code:pixelsize=11:antialias=true:autohint=true",
+	"scientifica:pixelsize=11:antialias=false",
 };
 static int fonts_current = 0;
 /* Spare fonts */
