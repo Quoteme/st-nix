@@ -30,6 +30,10 @@ $(OBJ): config.h config.mk
 st: $(OBJ)
 	$(CC) -o $@ $(OBJ) $(STLDFLAGS)
 
+# compile with valgrind support
+st-debug: $(OBJ)
+	$(CC) -g -o $@ $(OBJ) $(STLDFLAGS)
+
 clean:
 	rm -f st $(OBJ) st-$(VERSION).tar.gz
 
